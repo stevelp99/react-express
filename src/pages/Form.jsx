@@ -2,7 +2,11 @@
 import Likes from "../components/Likes";
 import Dislike from "../components/Dislike";
 import Comment from "../components/Comment";
-import React, { Component } from "react";export class Form extends Component {
+import React, { Component } from "react";
+const margin={
+  margin: 50
+}
+export class Form extends Component {
   
   constructor(props) {
     super(props);
@@ -47,7 +51,7 @@ import React, { Component } from "react";export class Form extends Component {
       );
     });
     return (
-      <div>
+      <div style={margin}>
         <label>Comment Box: </label>
         <form onSubmit={this.handleSubmit}>
           <input

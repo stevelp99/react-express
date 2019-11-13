@@ -1,5 +1,7 @@
 import React from 'react'
-
+const margin={
+  margin: 50
+}
 
 export default class AlarmClock extends React.Component {
     constructor() {
@@ -55,7 +57,7 @@ export default class AlarmClock extends React.Component {
   
     render() {
       return (
-        <div>
+        <div style={margin}>
           <h1>React Alarm Clock</h1>
           <h2>It is {this.state.currentTime}.
           </h2>

@@ -1,5 +1,11 @@
 import React from "react";
-
+const layout={
+  display: "flex",
+  listStyleType:"none",
+}
+const listLayout={
+  marginRight:10,
+}
 export default class Users extends React.Component {
   constructor(props) {
     super(props);
@@ -16,9 +22,9 @@ export default class Users extends React.Component {
 
   render() {
     return (
-      <ul>
+      <ul style={layout}>
         {this.state.users.map((user, index) => {
-          return <li key={index}>{user}</li>;
+          return <li style={listLayout} key={index}>{user}</li>;
         })}
       </ul>
     );

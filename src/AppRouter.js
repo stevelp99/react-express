@@ -8,7 +8,7 @@ import Counter from "./pages/Counter";
 import Clock from "./pages/Clock";
 import Timer from "./pages/Timer";
 import Alarm from "./pages/Alarm";
-import World from "./pages/World";
+// import World from "./pages/World";
 import Calc from "./pages/Calc";
 import Form from "./pages/Form";
 import Data from "./pages/Data";
@@ -33,7 +33,7 @@ export default function AppRouter(){
             <li style={space}><Link style={linkSpace}to="clock">Clock</Link></li>
             <li style={space}><Link style={linkSpace}to="timer">Timer</Link></li>
             <li style={space}><Link style={linkSpace}to="alarm">Alarm</Link></li>
-            <li style={space}><Link style={linkSpace}to="world">World Clock</Link></li>
+            {/* <li style={space}><Link style={linkSpace}to="world">World Clock</Link></li> */}
             <li style={space}><Link style={linkSpace}to="pad">Calculator</Link></li>
             <li style={space}><Link style={linkSpace}to="form">Form</Link></li>
             <li style={space}><Link style={linkSpace}to="data">Data</Link></li>
@@ -61,9 +61,9 @@ export default function AppRouter(){
             <Route exact path="/alarm">
                 <Alarm/>
             </Route>
-            <Route exact path="/world">
+            {/* <Route exact path="/world">
                 <World/>
-            </Route>
+            </Route> */}
             <Route exact path="/pad">
                 <Calc/>
             </Route>
