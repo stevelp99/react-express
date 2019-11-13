@@ -22,7 +22,7 @@ export default class Users extends React.Component {
 
   render() {
     return (
-      <ul style={layout}>
+      <ul style={layout} >
         {this.state.users.map((user, index) => {
           return <li style={listLayout} key={index}>{user}</li>;
         })}
